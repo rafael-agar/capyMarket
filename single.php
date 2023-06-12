@@ -10,23 +10,26 @@
                 <div class="col-lg-8">
                     <div class="blog-details-wrap mb-120">
                         <div class="post-thum">
-                            <img class="img-fluid" src="<?php the_post_thumbnail('blog'); ?>
+                            <img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
                          
                         </div>
                         <div class="blog-meta">
                             <ul>
                                 <li><?php the_date(); ?></li>
-                                <li><?php the_field('source'); ?></li>
+                            
                             </ul>
                         </div>
                         <h2 class="post-title"><?php the_title(); ?></h2>
-                        <div class="post-content">
+                        <div class="post-content mb-5">
                             
                         <p><?php the_content(); ?></p>
-                        
-                            
+                        					
                         </div>
-
+						
+						<div>
+							<p><?php the_field('source'); ?></p>
+							<p><?php the_field('pictures'); ?></p>
+						</div>
                     </div>
 
 

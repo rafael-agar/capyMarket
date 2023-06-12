@@ -10,6 +10,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Primary Meta Tags -->
+<title>CapyMarket</title>
+<meta name="Capy Market" content="All about then — Capybara World">
+<meta name="description" content="All about then — Capybara World!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://capymarket.com">
+<meta property="og:title" content="CapyMarket">
+<meta property="og:description" content="All about then — Capybara World!">
+<meta property="og:image" content="https://capymarket.com/wp-content/uploads/2023/06/Capi05-e1686491109142.png">
+
+
     <link rel="shortcut icon" href="<?php echo esc_url( wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' )[0] ); ?>"">
     <title><?php echo get_bloginfo('name'); ?></title>
 
@@ -54,14 +67,14 @@
                         <h1>Capybara Blog</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="<?php echo get_home_url(); ?>">I tell you my history!</a></li>
+                                <li class="breadcrumb-item"><a href="<?php echo get_home_url(); ?>">I'll tell you my history!</a></li>
                                 <!-- <li class="breadcrumb-item " aria-current="page">Capybara Blog</li> -->
                             </ol>
                         </nav>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="banner-img d-lg-block d-none">
+                    <div class="banner-img d-lg-block">
                     
                     <?php
                         // Array of image file names
@@ -84,9 +97,9 @@
                 
                     
                         <div class="banner-img-bg">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>assets/images/bg/inner-banner-vec.png" alt="">
+                        <img class="w-50" src="<?php echo get_template_directory_uri(); ?>assets/images/bg/inner-banner-vec.png" alt="">
                         </div>
-                        <img class="img-fluid" src="<?php echo get_field($randomImage); ?>" alt="">
+                        <img class="col col-md-6 mx-auto w-75" src="<?php echo get_field($randomImage); ?>" alt="">
                     </div>
                 </div>
             </div>
